@@ -18,3 +18,5 @@ To run the application on your local machine,
 -Navigate inside the project in terminal.
 -Run command 'npm i' to install all the required dependecies.
 -run command 'npm run dev' to run the project in your browser
+
+Note - This project doesn't include media queriy, so it wont work properly in smaller viewports
