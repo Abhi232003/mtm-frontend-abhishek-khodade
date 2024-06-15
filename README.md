@@ -15,7 +15,7 @@ Key Functionalities:-
 
 To run the application on your local machine, 
 -Clone the respository at your machine.
--Navigate inside the project in terminal.
+-Navigate to \itinerary-planner in terminal.
 -Run command 'npm i' to install all the required dependecies.
 -run command 'npm run dev' to run the project in your browser
 
