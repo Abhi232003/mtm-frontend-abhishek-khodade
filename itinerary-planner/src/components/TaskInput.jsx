@@ -32,11 +32,12 @@ const TaskInput = ({ addTask }) => {
                         <br />
                         <input
                             type="text"
+                            className='task_input'
                             value={task}
                             onChange={(e) => setTask(e.target.value)}
                             placeholder="Add a new task"
                         />
-                        <button type="submit">Add Task +</button>
+                        <button className="task-add-btn" type=" submit">Add Task +</button>
                         <br />
                         <Link className="list_btn" to="/list">Show list</Link>
                     </form>
@@ -57,7 +58,7 @@ const TaskInput = ({ addTask }) => {
                     </Canvas>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

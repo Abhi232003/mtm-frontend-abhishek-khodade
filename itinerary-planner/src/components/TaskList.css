@@ -1,0 +1,123 @@
+.tasks-list-container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 80%;
+width: 70%;
+margin: 0 auto; /* Centers horizontally /
+position: relative; / Ensure positioning context */
+}
+
+.tasks-table-container {
+position: absolute;
+top: 10%;
+justify-content: center;
+align-items: center;
+width: 80%;
+height: 80%;
+overflow: auto;
+border-radius: 30px;
+}
+
+.tasks-table {
+backdrop-filter: blur(7px);
+background-color: rgba(94, 92, 92, 0.6);
+width: 100%;
+border-collapse: collapse;
+text-align: center;
+border-radius: 30px; 
+overflow: hidden;
+color: white;
+}
+
+.tasks-table th,
+.tasks-table td {
+padding: 8px;
+font-weight: 400;
+border-bottom: 1px solid white;
+}
+
+.tasks-table th {
+backdrop-filter: blur(7px);
+background-color: rgba(95, 93, 93, 0.6);
+font-weight: 500;
+}
+
+.tasks-table input[type="text"] {
+width: 100%;
+}
+
+.tasks-table button {
+margin-right: 5px;
+}
+.description-column{
+text-align: left !important;
+padding-left: 0px !important;
+overflow: hidden;
+}
+.action-col{
+width: 400px;
+}
+.sr-col{
+width: 100px;
+}
+.edit-btn{
+font-size: 12px;
+color: white;
+background-color: rgb(5, 60, 169);
+padding: 6px 20px;
+border-radius: 50px;
+text-decoration: none;
+outline: none;
+border: none;
+}
+.delete-btn{
+font-size: 12px;
+color: white;
+background-color: rgb(180, 27, 0);
+padding: 6px 20px;
+border-radius: 50px;
+text-decoration: none;
+outline: none;
+border: none;
+}
+.save-btn{
+font-size: 12px;
+color: white;
+background-color: rgb(0, 177, 62);
+padding: 6px 20px;
+border-radius: 50px;
+text-decoration: none;
+outline: none;
+border: none;
+margin: 10px;
+}
+.cancel-btn{
+margin: 10px;
+font-size: 12px;
+color: white;
+background-color: rgb(101, 98, 98);
+padding: 6px 20px;
+border-radius: 50px;
+text-decoration: none;
+outline: none;
+border: none;
+}
+.edit-input{
+width: 200px !important;
+background: none;
+outline: none;
+border: none;
+border-radius: 50px;
+font-size: 15px;
+padding: 5px;
+height: 30px;
+background-color: rgba(252, 253, 255, 0.6);
+padding-left: 20px;
+margin-top: 10px;
+}
+.done-mark{
+font-size: 13px;
+padding: 20px;
+color: black;
+}
