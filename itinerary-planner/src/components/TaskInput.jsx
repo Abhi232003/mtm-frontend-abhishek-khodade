@@ -1,6 +1,6 @@
 import React, { useState, Suspense } from 'react';
 import { Link } from 'react-router-dom';
-import Earth from '../../public/Earth'
+import Earth_b from '../../public/Earth_b'
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import './TaskInput.css'
@@ -49,8 +49,9 @@ const TaskInput = ({ addTask }) => {
                 <div className="right-content">
                     <Canvas className="canvas-background">
                         <ambientLight intensity={1} />
+                        <pointLight position={[5, 5, 4]} intensity={200} color="#FFFFFF" />
                         <Suspense fallback={null}>
-                            <Earth scale={[1.8, 1.8, 1.8]} />
+                            <Earth_b scale={[0.0045, 0.0045, 0.0045]} />
                             <OrbitControls
                                 autoRotate={true}
                                 enablePan={false}
