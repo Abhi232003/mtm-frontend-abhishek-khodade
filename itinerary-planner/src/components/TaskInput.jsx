@@ -29,7 +29,7 @@ const TaskInput = ({ addTask }) => {
                     <p>Plan your itineraries efficiently with <br />
                         <span className='mtm'>My Trip Mate</span><br />
                         <span className='it-plan'>Itinerary Planner,</span><br />
-                        so you never forget anything while you travel the World
+                        so you never forget anything while you travel the World.
                     </p>
                     <form onSubmit={handleSubmit}>
                         <label htmlFor="task">Enter a task: </label>
@@ -60,7 +60,7 @@ const TaskInput = ({ addTask }) => {
                             />
                         </Suspense>
                     </Canvas>
-                    <p className='model_instruction'>Drag the mouse across earth <br /> to interact with it</p>
+                    <p className='model_instruction'>Drag the mouse across the Earth <br /> to interact with it</p>
                 </div>
             </div>
         </div >
