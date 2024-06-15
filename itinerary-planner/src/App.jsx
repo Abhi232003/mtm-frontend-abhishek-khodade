@@ -4,6 +4,9 @@ import TaskInput from './components/TaskInput';
 import TasksList from './components/TasksList';
 import './App.css';
 
+import { Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+
 export default function App() {
   const [tasks, setTasks] = useState(() => {
     const localValue = localStorage.getItem("tasks");
@@ -35,10 +38,19 @@ export default function App() {
   };
 
   return (
-    <div>
-      <h1>Itinerary Planner</h1>
-      <TaskInput addTask={addTask} />
-      <TasksList tasks={tasks} updateTask={updateTask} deleteTask={deleteTask} />
-    </div>
+    <Router>
+      <div>
+        <h1>Itinerary Planner</h1>
+
+
+
+        <Routes>
+          <Route exact path="/" element={<TaskInput addTask={addTask} />} />
+
+          <Route path="/list" element={<TasksList tasks={tasks} updateTask={updateTask} deleteTask={deleteTask} />} />
+
+        </Routes>
+      </div >
+    </Router >
   );
 }

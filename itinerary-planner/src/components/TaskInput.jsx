@@ -1,5 +1,6 @@
 // src/components/TaskInput.jsx
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const TaskInput = ({ addTask }) => {
     const [task, setTask] = useState('');
@@ -23,6 +24,7 @@ const TaskInput = ({ addTask }) => {
                 placeholder="Add a new task"
             />
             <button type="submit">Add Task</button>
+            <Link className="list_btn" to="/list">Show list</Link>
         </form>
     );
 };
