@@ -19,4 +19,9 @@ To run the application on your local machine,
 -Run command 'npm i' to install all the required dependecies.
 -run command 'npm run dev' to run the project in your browser
 
+This project has been deployed and is live using Vercel
+URl:- [https://mtm-frontend-abhishek-khodade.vercel.app/](https://mtm-frontend-abhishek-khodade.vercel.app/)
+Important:- The functionality to persist itinerary list won't work on live website as it won't be able to use localStoage saved data as it would if ran locally,
+so refreshing list page would throw error '404: NOT_FOUND'.
+
 Note - This project doesn't include media queriy, so it wont work properly in smaller viewports
