@@ -16,9 +16,11 @@ const TasksList = ({ tasks, updateTask, deleteTask }) => {
             alert('Task cannot be empty');
             return;
         }
-        updateTask(taskId, newTaskDescription);
+        updateTask(taskId, { description: newTaskDescription }); // Update only the description
         setEditingTaskId(null);
+        setNewTaskDescription(''); // Reset newTaskDescription after saving
     };
+
 
     const toggleCompletion = (taskId, completed) => {
         updateTask(taskId, { ...tasks.find(task => task.id === taskId), completed: !completed });
