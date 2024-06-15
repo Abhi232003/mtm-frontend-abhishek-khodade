@@ -1,4 +1,3 @@
-// src/components/TaskInput.jsx
 import React, { useState, Suspense } from 'react';
 import { Link } from 'react-router-dom';
 import Earth from '../../public/Earth'
@@ -50,11 +49,11 @@ const TaskInput = ({ addTask }) => {
                     <Canvas className="canvas-background">
                         <ambientLight intensity={1} />
                         <Suspense fallback={null}>
-                            <Earth scale={[1.8, 1.8, 1.8]} /> {/* Increase the size of the Earth */}
+                            <Earth scale={[1.8, 1.8, 1.8]} />
                             <OrbitControls
-                                autoRotate={true}  // Enable auto-rotate
-                                enablePan={false}  // Disable panning (optional)
-                                enableZoom={false}  // Enable zooming (optional)
+                                autoRotate={true}
+                                enablePan={false}
+                                enableZoom={false}
                                 maxPolarAngle={Math.PI / 2}
                                 minPolarAngle={Math.PI / 2}
                             />

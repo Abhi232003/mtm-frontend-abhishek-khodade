@@ -1,9 +1,8 @@
-/* Example of CSS */
 .main_landing_cont {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Ensures the div takes full viewport height */
+    height: 100vh; 
 }
 .list-title{
     color: white;
@@ -24,21 +23,21 @@
     background-color: rgba(130, 127, 127, 0.6);
     width: 60%;
     display: flex;
-    align-items: center; /* Center vertically */
-    justify-content: space-between; /* Space items apart horizontally */
-    padding: 20px; /* Example padding */
+    align-items: center;
+    justify-content: space-between; 
+    padding: 20px;
     border-radius: 50px;
 }
 
 .left-content {
-    flex: 1; /* Take up remaining space */
+    flex: 1; 
     margin: 50px;
 }
 
 .right-content {
-    width: 40%; /* Adjust width of the right content as needed */
-    height: 400px; /* Adjust height of the canvas container as needed */
-    position: relative; /* Ensure canvas remains in position */
+    width: 40%; 
+    height: 400px; 
+    position: relative; 
     text-align: center;
 }
 

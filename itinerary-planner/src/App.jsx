@@ -1,4 +1,3 @@
-// src/App.jsx
 import React, { useState, useEffect } from 'react';
 import TaskInput from './components/TaskInput';
 import TasksList from './components/TasksList';
