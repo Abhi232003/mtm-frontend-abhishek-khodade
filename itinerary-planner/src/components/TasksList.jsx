@@ -1,4 +1,3 @@
-// src/components/TasksList.jsx
 import React, { useState } from 'react';
 import './TaskList.css';
 
@@ -54,7 +53,9 @@ const TasksList = ({ tasks, updateTask, deleteTask }) => {
                                             <button className="cancel-btn" type="button" onClick={() => setEditingTaskId(null)}>Cancel</button>
                                         </form>
                                     ) : (
-                                        <span className='scrollable-text'>{task.description}</span>
+                                        <span className={`scrollable-text ${task.completed ? 'strike-through' : ''}`}>
+                                            {task.description}
+                                        </span>
                                     )}
                                 </td>
 
@@ -63,7 +64,7 @@ const TasksList = ({ tasks, updateTask, deleteTask }) => {
                                         <>
                                             <button className="edit-btn" onClick={() => startEditing(task)}>Edit</button>
                                             <button className="delete-btn" onClick={() => deleteTask(task.id)}>Delete</button>
-                                            <label className="done-mark" htmlFor=" checkbox">Mark as done: </label>
+                                            <label className="done-mark" htmlFor="checkbox">Mark as done: </label>
                                             <input
                                                 type="checkbox"
                                                 className='check-mark'

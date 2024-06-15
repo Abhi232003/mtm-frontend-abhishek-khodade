@@ -18,6 +18,12 @@ height: 80%;
 overflow: auto;
 border-radius: 30px;
 }
+/* TaskList.css */
+.strike-through {
+    text-decoration: line-through;
+    color: rgb(189, 187, 187);
+}
+
 
 .tasks-table {
 backdrop-filter: blur(7px);
