@@ -27,6 +27,9 @@ const TasksList = ({ tasks, updateTask, deleteTask }) => {
 
     return (
         <div className="tasks-list-container">
+            <div className='list-title'>
+                <h2>Itinerary tasks</h2>
+            </div>
             <div className="tasks-table-container">
                 <table className="tasks-table">
                     <thead>

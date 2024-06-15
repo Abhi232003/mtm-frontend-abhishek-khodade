@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Earth from '../../public/Earth'
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
+import './TaskInput.css'
 
 const TaskInput = ({ addTask }) => {
     const [task, setTask] = useState('');
@@ -20,10 +21,13 @@ const TaskInput = ({ addTask }) => {
 
     return (
         <div className='main_landing_cont'>
+            <div className='logo-div'>
+                <img src="../../../src/assets/mtm-logo.png" alt="" />
+            </div>
             <div className='landing_container'>
                 <div className="left-content">
                     <p>Plan you itineraries eficiently with <br />
-                        <span className='mtm'>My Trip Mate's</span><br />
+                        <span className='mtm'>My Trip Mate</span><br />
                         <span className='it-plan'>Itinerary Planner,</span><br />
                         so you never forget anything while you travel the World
                     </p>
@@ -56,6 +60,7 @@ const TaskInput = ({ addTask }) => {
                             />
                         </Suspense>
                     </Canvas>
+                    <p className='model_instruction'>Drag the mouse across earth <br /> to interact with it</p>
                 </div>
             </div>
         </div >

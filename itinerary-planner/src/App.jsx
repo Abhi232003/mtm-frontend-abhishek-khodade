@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import TaskInput from './components/TaskInput';
 import TasksList from './components/TasksList';
-import './App.css';
 
 import { Link } from 'react-router-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
