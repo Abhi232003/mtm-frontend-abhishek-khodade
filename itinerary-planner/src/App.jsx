@@ -39,11 +39,7 @@ export default function App() {
 
   return (
     <Router>
-      <div>
-        <h1>Itinerary Planner</h1>
-
-
-
+      <div className='main_cont'>
         <Routes>
           <Route exact path="/" element={<TaskInput addTask={addTask} />} />
 

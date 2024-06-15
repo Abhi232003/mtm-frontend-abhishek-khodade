@@ -1,0 +1,94 @@
+/* Example of CSS */
+.main_landing_cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensures the div takes full viewport height */
+}
+
+.landing_container {
+    backdrop-filter: blur(7px);
+    background-color: rgba(130, 127, 127, 0.6);
+    width: 60%;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: space-between; /* Space items apart horizontally */
+    padding: 20px; /* Example padding */
+    border-radius: 50px;
+}
+
+.left-content {
+    flex: 1; /* Take up remaining space */
+    margin: 50px;
+}
+
+.right-content {
+    width: 40%; /* Adjust width of the right content as needed */
+    height: 400px; /* Adjust height of the canvas container as needed */
+    position: relative; /* Ensure canvas remains in position */
+}
+
+.canvas-background {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 5%;
+}
+
+.left-content p{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+
+.mtm{
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+.it-plan{
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(116, 233, 251);
+}
+input{
+    width: 50%;
+    background: none;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    backdrop-filter: blur(9px);
+    font-size: 15px;
+    padding: 5px;
+    height: 30px;
+    background-color: rgba(252, 253, 255, 0.6);
+    padding-left: 20px;
+    margin-top: 10px;
+}
+label{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(255, 246, 246);
+}
+button{
+border: none;
+outline: none;
+color: black;
+font-size: 15px;
+font-weight: 500;
+text-decoration: underline;
+background-color: rgb(207, 209, 211);
+padding: 8px 30px;
+border-radius: 20px;
+margin: 20px;
+}
+.list_btn{
+    position: relative;
+    top: 5px;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(5, 60, 169);
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+}
