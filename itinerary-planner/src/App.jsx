@@ -1,35 +1,44 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// src/App.jsx
+import React, { useState, useEffect } from 'react';
+import TaskInput from './components/TaskInput';
+import TasksList from './components/TasksList';
+import './App.css';
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  const [tasks, setTasks] = useState(() => {
+    const localValue = localStorage.getItem("tasks");
+    if (localValue == null) return [];
+    return JSON.parse(localValue);
+  });
+
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
+
+  const addTask = (description) => {
+    setTasks((currentTasks) => [
+      ...currentTasks,
+      { id: crypto.randomUUID(), description, completed: false },
+    ]);
+  };
+
+  const updateTask = (taskId, updatedTask) => {
+    setTasks((currentTasks) =>
+      currentTasks.map((task) =>
+        task.id === taskId ? { ...task, ...updatedTask } : task
+      )
+    );
+  };
+
+  const deleteTask = (taskId) => {
+    setTasks((currentTasks) => currentTasks.filter((task) => task.id !== taskId));
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div>
+      <h1>Itinerary Planner</h1>
+      <TaskInput addTask={addTask} />
+      <TasksList tasks={tasks} updateTask={updateTask} deleteTask={deleteTask} />
+    </div>
+  );
 }
-
-export default App
