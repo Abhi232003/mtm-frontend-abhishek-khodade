@@ -15,6 +15,7 @@ const TaskInput = ({ addTask }) => {
             return;
         }
         addTask(task);
+        alert('Task added successfully!');
         setTask('');
     };
 
@@ -25,7 +26,7 @@ const TaskInput = ({ addTask }) => {
             </div>
             <div className='landing_container'>
                 <div className="left-content">
-                    <p>Plan you itineraries eficiently with <br />
+                    <p>Plan your itineraries efficiently with <br />
                         <span className='mtm'>My Trip Mate</span><br />
                         <span className='it-plan'>Itinerary Planner,</span><br />
                         so you never forget anything while you travel the World
@@ -40,7 +41,7 @@ const TaskInput = ({ addTask }) => {
                             onChange={(e) => setTask(e.target.value)}
                             placeholder="Add a new task"
                         />
-                        <button className="task-add-btn" type=" submit">Add Task +</button>
+                        <button className="task-add-btn" type="submit">Add Task +</button>
                         <br />
                         <Link className="list_btn" to="/list">Show list</Link>
                     </form>
