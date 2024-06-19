@@ -2,7 +2,7 @@
 
 An <ins>“Itinerary Planner”</ins> for My Trip Mates.<br />
 Created using React + Vite.<br />
-Also implemented an interactive 3D model of Earth using<ins>THREE.js</ins> or <ins>React Three Fiber.</ins> <br />
+Also implemented an interactive 3D model of Earth using<ins> THREE.js</ins> or <ins>React Three Fiber.</ins> <br />
 
 Users can add, view, update, and delete travel tasks, demonstrating familiarity with CRUD operations in React using
 Hooks.<br />
