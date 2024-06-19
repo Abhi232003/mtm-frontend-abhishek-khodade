@@ -24,4 +24,4 @@ URL:- [https://mtm-frontend-abhishek-khodade.vercel.app/](https://mtm-frontend-a
 <ins>Important</ins>:- The functionality to persist itinerary list won't work on live website as it won't be able to use localStoage saved data as it would if ran locally,
 so refreshing list page would throw error '404: NOT_FOUND'.<br />
 
-<ins>Note</ins> - This project doesn't include media queriy, so it wont work properly in smaller viewports.
+<ins>Note</ins> - This project doesn't include media query, so it wont work properly in smaller viewports.
